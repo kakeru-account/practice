@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブログのタイトル</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background: #444;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>私のブログ</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About</h2>
+            <p>このブログでは、日々の出来事や趣味について書いています。</p>
+        </section>
+        <section id="blog">
+            <h2>最新の投稿</h2>
+            <article>
+                <h3>ブログ投稿タイトル 1</h3>
+                <p>これは最初の投稿です。ここにコンテンツを追加してください。</p>
+            </article>
+            <article>
+                <h3>ブログ投稿タイトル 2</h3>
+                <p>これは2つ目の投稿です。続きはお楽しみに！</p>
+            </article>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>お問い合わせは <a href="mailto:example@example.com">example@example.com</a> まで。</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 私のブログ</p>
+    </footer>
+</body>
+</html>

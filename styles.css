@@ -10,7 +10,7 @@ body {
 
 /* ヘッダー */
 header {
-    background: #007BFF; /* メインの青 */
+    background: #6699CC; /* 落ち着いた明るい青 */
     color: white;
     text-align: center;
     padding: 1.5rem 0;
@@ -28,7 +28,7 @@ header p {
 
 /* ナビゲーション */
 nav {
-    background: #0056b3; /* 濃い青 */
+    background: #336699; /* 濃い青 */
     text-align: center;
     padding: 0.5rem 0;
 }
@@ -60,7 +60,7 @@ section {
 }
 
 h2 {
-    border-bottom: 2px solid #007BFF; /* 青のアクセント */
+    border-bottom: 2px solid #6699CC; /* 明るい青のアクセント */
     padding-bottom: 5px;
     margin-bottom: 15px;
     color: #333;
@@ -73,7 +73,7 @@ article {
 article h3 {
     margin: 0 0 10px;
     font-size: 1.5rem;
-    color: #0056b3; /* タイトルに濃い青 */
+    color: #336699; /* タイトルに濃い青 */
 }
 
 article p {
@@ -95,7 +95,7 @@ article img {
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #0056b3; /* 濃い青 */
+    background: #336699; /* 濃い青 */
     color: white;
     font-size: 0.9rem;
     margin-top: 20px;

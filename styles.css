@@ -20,10 +20,6 @@ header h1 {
     margin: 0;
 }
 
-img {
-    width: 50px;
-    height: 20px;
-}
 
 /* ナビゲーション */
 nav {
@@ -68,6 +64,11 @@ article {
 
 article h3 {
     margin: 0 0 10px;
+}
+
+img {
+    width: 50px;
+    height: 20px;
 }
 
 /* フッター */

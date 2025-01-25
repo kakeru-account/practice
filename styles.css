@@ -4,34 +4,40 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
 }
 
 /* ヘッダー */
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
+    background: #4CAF50;
+    color: white;
     text-align: center;
+    padding: 1.5rem 0;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2rem;
 }
 
+header p {
+    margin: 0;
+    font-size: 1rem;
+}
 
 /* ナビゲーション */
 nav {
-    background: #444;
-    padding: 0.5rem;
+    background: #333;
     text-align: center;
+    padding: 0.5rem 0;
 }
 
 nav a {
-    color: #fff;
-    margin: 0 10px;
+    color: white;
+    margin: 0 15px;
     text-decoration: none;
+    font-size: 1rem;
 }
 
 nav a:hover {
@@ -42,33 +48,47 @@ nav a:hover {
 .container {
     max-width: 800px;
     margin: 20px auto;
-    background: #fff;
+    background: white;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 /* セクション */
 section {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 h2 {
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #4CAF50;
     padding-bottom: 5px;
     margin-bottom: 15px;
+    color: #333;
 }
 
 article {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 article h3 {
     margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #4CAF50;
 }
 
-img {
-    width:680px;
-    height: 528px;
+article p {
+    margin: 0 0 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* レスポンシブ画像 */
+article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* フッター */
@@ -76,6 +96,7 @@ footer {
     text-align: center;
     padding: 10px 0;
     background: #333;
-    color: #fff;
+    color: white;
+    font-size: 0.9rem;
     margin-top: 20px;
 }

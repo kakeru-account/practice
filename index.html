@@ -3,57 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ブログのタイトル</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            background: #444;
-            padding: 0.5rem;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #333;
-            color: #fff;
-            margin-top: 20px;
-        }
-    </style>
+    <title>ブログの基本テンプレート</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>私のブログ</h1>
+        <p>日々の出来事や興味のあることを記録しています。</p>
     </header>
     <nav>
         <a href="#about">About</a>
@@ -61,28 +17,66 @@
         <a href="#contact">Contact</a>
     </nav>
     <div class="container">
+        <!-- 目次 -->
+        <section id="toc">
+            <h2>目次</h2>
+            <button class="toggle-button" onclick="toggleTOC()">目次を開く/閉じる</button>
+            <ul id="toc-list" class="hidden">
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </section>
+
+        <!-- コンテンツ -->
         <section id="about">
             <h2>About</h2>
-            <p>このブログでは、日々の出来事や趣味について書いています。</p>
+            <p>このブログは私の日常生活や趣味について共有するためのものです。</p>
         </section>
         <section id="blog">
             <h2>最新の投稿</h2>
             <article>
                 <h3>ブログ投稿タイトル 1</h3>
-                <p>これは最初の投稿です。ここにコンテンツを追加してください。</p>
+                <p>これは最初の投稿です。ここに好きな内容を書いてください。</p>
+                <img src="example1.jpg" alt="投稿画像1">
             </article>
             <article>
                 <h3>ブログ投稿タイトル 2</h3>
-                <p>これは2つ目の投稿です。続きはお楽しみに！</p>
+                <p>こちらは2つ目の投稿です。画像を載せる場合は以下のようにします。</p>
+                <img src="example2.jpg" alt="投稿画像2">
             </article>
         </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>お問い合わせは <a href="mailto:example@example.com">example@example.com</a> まで。</p>
+
+        <!-- 関連記事 -->
+        <section id="related-posts">
+            <h2>こちらの記事も読まれています</h2>
+            <ul>
+                <li><a href="#article1">関連記事タイトル 1</a></li>
+                <li><a href="#article2">関連記事タイトル 2</a></li>
+                <li><a href="#article3">関連記事タイトル 3</a></li>
+            </ul>
+        </section>
+
+        <!-- シェアボタン -->
+        <section id="share">
+            <h2>この記事をシェアする</h2>
+            <div class="share-buttons">
+                <a href="#" class="btn twitter">Twitter</a>
+                <a href="#" class="btn facebook">Facebook</a>
+                <a href="#" class="btn line">LINE</a>
+            </div>
         </section>
     </div>
     <footer>
-        <p>&copy; 2025 私のブログ</p>
+        <p>&copy; 2025 私のブログ | 作成者: あなたの名前</p>
     </footer>
+
+    <script>
+        // 目次の開閉を管理するスクリプト
+        function toggleTOC() {
+            const tocList = document.getElementById('toc-list');
+            tocList.classList.toggle('hidden');
+        }
+    </script>
 </body>
 </html>

@@ -10,7 +10,7 @@ body {
 
 /* ヘッダー */
 header {
-    background: #6699CC; /* 落ち着いた明るい青 */
+    background: #6699CC;
     color: white;
     text-align: center;
     padding: 1.5rem 0;
@@ -28,7 +28,7 @@ header p {
 
 /* ナビゲーション */
 nav {
-    background: #336699; /* 濃い青 */
+    background: #336699;
     text-align: center;
     padding: 0.5rem 0;
 }
@@ -60,43 +60,83 @@ section {
 }
 
 h2 {
-    border-bottom: 2px solid #6699CC; /* 明るい青のアクセント */
+    border-bottom: 2px solid #6699CC;
     padding-bottom: 5px;
     margin-bottom: 15px;
     color: #333;
 }
 
-article {
-    margin-bottom: 20px;
+/* 目次 */
+#toc-list {
+    margin: 10px 0;
+    padding-left: 20px;
+    list-style-type: disc;
 }
 
-article h3 {
-    margin: 0 0 10px;
-    font-size: 1.5rem;
-    color: #336699; /* タイトルに濃い青 */
+.hidden {
+    display: none;
 }
 
-article p {
-    margin: 0 0 10px;
-    font-size: 1rem;
-    color: #555;
-}
-
-/* レスポンシブ画像 */
-article img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* フッター */
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #336699; /* 濃い青 */
+.toggle-button {
+    background: #6699CC;
     color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.toggle-button:hover {
+    background: #336699;
+}
+
+/* 関連記事 */
+#related-posts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#related-posts ul li {
+    margin-bottom: 10px;
+}
+
+#related-posts ul li a {
+    color: #336699;
+    text-decoration: none;
+}
+
+#related-posts ul li a:hover {
+    text-decoration: underline;
+}
+
+/* シェアボタン */
+.share-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.share-buttons .btn {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
     font-size: 0.9rem;
-    margin-top: 20px;
+}
+
+.share-buttons .twitter {
+    background: #1DA1F2;
+}
+
+.share-buttons .facebook {
+    background: #4267B2;
+}
+
+.share-buttons .line {
+    background: #00C300;
+}
+
+.share-buttons .btn:hover {
+    opacity: 0.8;
 }
